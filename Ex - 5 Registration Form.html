@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Input Form</title>
+        <style>
+            body{
+                padding:0;
+                margin:0;
+                font-family:sans-serif;
+                font-size: 18px;
+            }
+            table{
+                margin:20px;
+                text-align: center;
+            }
+            input{
+                font-size: 17px;
+            }
+            td{
+                padding:5px;
+            }
+            caption{
+                font-variant: small-caps;
+                padding:10px;
+                font-size: 24px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <table border="1">
+                <caption>Form Example</caption>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" placeholder="Name" required></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="Email" required></td>
+                </tr>
+                <tr>
+                    <td>Telephone No.</td>
+                    <td><input type="tel" placeholder="Telephone No." required></td>
+                </tr>
+                <tr>
+                    <td>Number</td>
+                    <td><input type="number" min="0" max="100"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" value="Male" name="gender" required> Male
+                        <input type="radio" value="Female" name="gender"> Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td><input type="date" ></td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td><input type="time"></td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td><input type="checkbox"> Video Games  
+                        <input type="checkbox"> Outdoor Games
+                        <input type="checkbox"> Reading
+                    </td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td><select>
+                        <option selected>Rajkot</option>
+                        <option>Surat</option>
+                        <option>Ahemdabad</option>
+                        <option>Vadodra</option>
+                        <option>Gandhinagar</option>
+                        <option>Jamnagar</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>File</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>Color</td>
+                    <td><input type="color"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
