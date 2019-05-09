@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Experiment 5</title>
+  </head>
+  <body>
+    <h1>
+      Experiment 5: Design Registration form of Student registration with
+      following compulsory fields: First Name, Last name, Email, Mobile no,
+      Address, Country, State, City, Pin code, Highest degree.
+    </h1>
+    <form>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <table>
+          <tr>
+            <td><label>First Name</label></td>
+            <td><input type="text" placeholder="First Name" required /></td>
+          </tr>
+          <tr>
+            <td><label>Last Name</label></td>
+            <td><input type="text" placeholder="Last Name" required /></td>
+          </tr>
+          <tr>
+            <td><label>Email Address</label></td>
+            <td><input type="email" placeholder="Email" required /></td>
+          </tr>
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="Gender" required />Male
+              <input type="radio" name="Gender" required />Female
+              <input type="radio" name="Gender" required />Other
+            </td>
+          </tr>
+          <tr>
+                <td><label>Hobbies</label></td>
+                <td>
+                  <input type="checkbox"  required />Reading
+                  <input type="checkbox"  required />Music
+                  <input type="checkbox"  required />Sports
+                  <input type="checkbox"  required />Dance
+                </td>
+              </tr>
+          <tr>
+            <td><label>Phone No</label></td>
+            <td>
+              <input
+                type="number"
+                placeholder="Phone No"
+                required
+                max="9999999999"
+                min="1000000000"
+              />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Professional Information</legend>
+        <table>
+          <tr>
+            <td><label>Upload Your Resume</label></td>
+            <td><input type="file" required /></td>
+          </tr>
+          <tr>
+            <td><label>Country</label></td>
+            <td>
+              <input list="Country" placeholder="Select Country" required />
+              <datalist id="Country">
+                <option value="India"> </option>
+                <option value="Pakistan"> </option>
+                <option value="Shri lanka"> </option>
+                <option value="China"> </option>
+                <option value="Janapa"> </option>
+              </datalist>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select State</label></td>
+            <td>
+              <select required>
+                <option>--select State--</option>
+                <option>Gujarat</option>
+                <option>Maharastra</option>
+                <option>Kerala</option>
+                <option>Delhi</option>
+                <option>Rajastan</option>
+                <option>Bihar</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Select City</label></td>
+            <td>
+              <select required>
+                <option>--select City--</option>
+                <option>Rajkot</option>
+                <option>Jamanagar</option>
+                <option>Ahmedabad</option>
+                <option>Baroda</option>
+                <option>Surat</option>
+                <option>Gandinagar</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label>Pin Code</label></td>
+            <td><input type="number" placeholder="Pin Code" required /></td>
+          </tr>
+          <tr>
+            <td><label>Highest Degree</label></td>
+            <td>
+                  
+                            <select required>
+                              <option>--select degree--</option>
+                              <option>10th</option>
+                              <option>12th</option>
+                              <option>Diploma</option>
+                              <option>BE/B.Tech</option>
+                              <option>ME/M.Tech</option>
+                              <option>PhD</option>
+                            </select>
+                              
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Form Actions</legend>
+        <input type="submit" value="Save" />
+        <input type="reset" value="Clear" />
+      </fieldset>
+    </form>
+  </body>
+</html>
