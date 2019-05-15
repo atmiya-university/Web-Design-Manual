@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Experiment 8</title>
-  </head>
-  <body>
-    <h1>Experiment 8: Create a Section Based HTML Page with CSS.</h1>
-    <section>
-      <h1>WWF</h1>
-      <p>
-        The World Wide Fund for Nature (WWF) is an international organization
-        working on issues regarding the conservation, research and restoration
-        of the environment, formerly named the World Wildlife Fund. WWF was
-        founded in 1961.
-      </p>
-    </section>
+    <title>Experiment 19</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="ttps://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+  </style>
+</head>
+<body>
 
-    <section>
-      <h1>WWF's Panda symbol</h1>
-      <p>
-        The Panda has become the symbol of WWF. The well-known panda logo of WWF
-        originated from a panda named Chi Chi that was transferred from the
-        Beijing Zoo to the London Zoo in the same year of the establishment of
-        WWF.
-      </p>
-    </section>
+<div id="demo" class="carousel slide" data-ride="carousel">
 
-    <p>
-      <strong>Note:</strong> The section tag is not supported in Internet
-      Explorer 8 and earlier versions.
-    </p>
-  </body>
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="la.jpg" alt="Los Angeles" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="ny.jpg" alt="New York" width="1100" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+</body>
 </html>
